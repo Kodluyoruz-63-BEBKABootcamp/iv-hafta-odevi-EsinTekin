@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewData["Title"] = "CreateArt";
+}
+
+<div>
+    <form action="CreateArt" method="POST">
+        <fieldset>
+            <table>
+
+                <tr>
+                    <td>
+                        <span>ID: </span>
+                    </td>
+                    <td>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <input type="text" name="id  " value="101   " />
+
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+            <br />
+            <table>
+
+                <tr>
+                    <td>
+                        <span>Name: </span>
+                        &nbsp&nbsp&nbsp 
+                        <input type="text" name="name" value="Nature" />
+
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table>
+
+                <tr>
+                    <td>
+                        <span>Year: </span>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <select name="year">
+                            <option value="Before 2000"> Before 2000 </option>
+                            <option value="2000-2010">   2000-2010   </option>
+                            <option value="2010-Present">2010-Present</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table>
+
+                <tr>
+                    <td>
+                        <span>Genre: </span>&nbsp&nbsp&nbsp
+                        <input type="checkbox" name="genres" value="Watercolor" />
+                        <span>Watercolor</span>
+                        <input type="checkbox" name="genres" value="Oilcolor" />
+                        <span>Oilcolor</span>
+                        <input type="checkbox" name="genres" value="MixTechniques" />
+                        <span>MixTechniques</span>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table>
+
+                <tr>
+                    <td>
+                        <span>In Store: </span>
+                        &nbsp&nbsp
+                        <input type="radio" name="isinstore" value="true" />
+                        <span>Yes</span>
+                        <input type="radio" name="isinstore" value="false" />
+                        <span>No</span>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table>
+
+                <tr>
+                    <td>
+                        <input type="submit" name="operation" value="Create" />
+                        &nbsp&nbsp  <input type="submit" name="operation" value="Update" />
+                    </td>
+                </tr>
+            </table>
+       
+
+    </form>
+
+</div>
